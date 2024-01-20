@@ -23,12 +23,12 @@ int main()
     }
     int x1,y1,x2,y2,t1=1,t2=1,t3=0,t4=0;
     cout<<"Nhập vị trí robot của người chơi thứ 1 : ";cin>>x1>>y1;
-    while ((x1>n-1 && x1<0) || (y1>m-1 && y1<0))
+    while ((x1>n-1 || x1<0) || (y1>m-1 || y1<0))
     {
         cout<<"Vị trí của robot thứ 1 không hợp lệ , xin nhập lại : ";cin>>x1>>y1;
     }
     cout<<"Nhập vị trí robot của người chơi thứ 2 : ";cin>>x2>>y2;
-    while ((x2>n-1 && x2<0) || (y2>m-1 && y2<0))
+    while ((x2>n-1 || x2<0) || (y2>m-1 || y2<0))
     {
         cout<<"Vị trí của robot thứ 2 không hợp lệ , xin nhập lại : ";cin>>x2>>y2;
     }
